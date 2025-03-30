@@ -1,4 +1,6 @@
 ﻿#include <iostream>
+#include<cstdlib>
+#include<ctime>
 using namespace std;
 
 // Function Overloading: функції з однаковою назвою, але різною сигнатурою
@@ -19,6 +21,9 @@ int getRandom(int min, int max)
 
 int main()
 {
+	cout << "sec: " << time(0) << endl; // 1-st of January 1970
+	srand(time(0));
+
 	cout << "Random to 100: " << getRandom(100) << endl;
 	cout << "Random: " << getRandom() << endl;
 	cout << "Random from 50 to 70: " << getRandom(50, 70) << endl;

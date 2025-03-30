@@ -26,6 +26,8 @@ int main()
 
 	cout << "Summ of elements = " << getSumm(arr, size) << endl;
 
+	incrementArray(arr, size, getSumm(arr, size));
+
 	return 0;
 }
 

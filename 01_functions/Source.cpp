@@ -1,14 +1,20 @@
 ﻿#include <iostream>
 using namespace std;
 
+void showMessage()
+{
+	cout << "Hello, World!" << endl;
+}
+
 // Function Prototype: return type, name, arguments
 void showStars(int count);
 double getSumm(double a, double b);
 double getPow(double number, int pow = 2); // write default values in prototype only
 
-
 int main()
 {
+	showMessage();
+
 	// function invokation
 	showStars(10);
 	showStars(4);
